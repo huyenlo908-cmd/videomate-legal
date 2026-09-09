@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VideoMate Privacy Policy / Chính sách quyền riêng tư VideoMate.">
+  <title>VideoMate Privacy Policy | Chính sách quyền riêng tư VideoMate</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header><div class="bar"><a class="brand" href="../">VideoMate</a><nav aria-label="Primary"><a href="./">Privacy Policy</a><a href="../delete-account/">Delete Account</a><a href="../support/">Support</a></nav></div></header>
+  <main id="content"><article>
+    <p class="eyebrow">SGA VN · xyz.goirong.videomate</p>
+    <h1>VideoMate Privacy Policy<br><span lang="vi">Chính sách quyền riêng tư VideoMate</span></h1>
+    <p class="meta"><strong>Effective date / Ngày có hiệu lực:</strong> September 10, 2026 / 10 tháng 9 năm 2026</p>
+    <p>This policy explains how SGA VN processes personal data in the VideoMate Android app. It applies to VideoMate services and accounts, not to websites or services operated independently by a third party.</p>
+
+    <h2>1. Service and adult-only scope / Dịch vụ và phạm vi 18+</h2>
+    <p>VideoMate is an adult social video-chat service. The audited implementation uses date of birth to determine adult eligibility. It is intended only for people aged 18 or older. The audited version does not implement biometric age verification and does not collect identity documents such as national identity cards or passports for age verification.</p>
+
+    <h2>2. Data VideoMate handles / Dữ liệu VideoMate xử lý</h2>
+    <ul>
+      <li><strong>Account and profile data / Tài khoản và hồ sơ:</strong> username; password stored as a hash; account and refresh-session tokens; display name; profile picture; gender; date of birth; province/city; country; role; and account/age/legal-acceptance status. These are used to create and secure accounts, provide profiles, manage sessions, enforce adult access, and operate the service.</li>
+      <li><strong>Content and social activity / Nội dung và hoạt động xã hội:</strong> one-to-one chat text, private chat image attachments, sender and conversation information, timestamps, profile likes and visits, feed interactions where available, gifts, and Gold-related activity. These are used to deliver messaging, show conversation history, administer service features, and handle reports.</li>
+      <li><strong>Call data / Dữ liệu cuộc gọi:</strong> participants, call status, technical channel and user identifiers, connection/join status, start/end times, duration, end reason, and Gold spent or earned. The app also supports in-call text; the audited server implementation makes active-call text ephemeral and expires it after one hour.</li>
+      <li><strong>Camera and microphone / Camera và microphone:</strong> used only when a person participates in a real-time video call. The app requests Android camera and microphone permission for that purpose. The audited source does not implement recording of calls or permanent storage of call audio/video content. Real-time media is nevertheless transmitted through the RTC provider so that a call can occur.</li>
+      <li><strong>Safety and moderation / An toàn và kiểm duyệt:</strong> reports, blocks, reported subject and reason, safety classification, moderation status/actions, and related audit records. These help investigate abuse, prevent further interaction, and protect the community.</li>
+      <li><strong>Technical and security data / Dữ liệu kỹ thuật và bảo mật:</strong> hashed username and IP signals for login-rate limiting, session security data, and limited technical error information where the configured service accepts it. VideoMate uses these for security, diagnostics, fraud prevention, and service reliability.</li>
+      <li><strong>Gold and purchases / Gold và giao dịch:</strong> Gold balance, wallet ledger entries, gifts, purchase product identifiers, payment/order status, provider order reference, and verification/consumption state. For Google Play Gold purchases, the backend uses a purchase token for verification and stores a hash of that token; it does not receive or store payment-card details from Google Play.</li>
+    </ul>
+
+    <h2>3. How data is used / Cách sử dụng dữ liệu</h2>
+    <p>We use the above data to provide accounts, profiles, chat, calls, Gold and gift functions; verify and reconcile purchases; detect duplicate charges or fraud; authenticate users; enforce adult and moderation controls; investigate reports; secure the service; resolve disputes; and comply with applicable legal obligations.</p>
+
+    <h2>4. Sharing and service providers / Chia sẻ và bên cung cấp dịch vụ</h2>
+    <p>VideoMate does not sell personal data. Data is shared only as needed to provide the service, protect users, process a transaction, or meet a lawful obligation. The audited implementation includes these service providers or integrations:</p>
+    <ul>
+      <li><strong>Agora:</strong> transmits real-time camera and microphone streams for calls. Agora processes the media needed to transmit the call; the audited app source does not implement call recording.</li>
+      <li><strong>Google Play Billing:</strong> processes Google Play purchases of consumable Gold. Google handles payment instruments; VideoMate processes purchase-verification information described above.</li>
+      <li><strong>payOS:</strong> is used by the audited backend to create and reconcile Gold payment orders where that payment method is offered.</li>
+      <li><strong>Configured service infrastructure:</strong> VideoMate’s server and database process the data necessary to run the service. The audited app package also includes Supabase Flutter support and a selectable Supabase backend mode; use of that mode is determined by the app’s configured backend.</li>
+    </ul>
+    <p>We may also disclose data when necessary to protect people or the service, investigate fraud or abuse, resolve a dispute, or comply with law. We do not provide advertising trackers, analytics scripts, or cookies on this legal website.</p>
+
+    <h2>5. Permissions / Quyền trên Android</h2>
+    <p>VideoMate requests <strong>Camera</strong> and <strong>Microphone</strong> permission for real-time video/audio calls. Internet and network-state access support communication and connectivity. Audio-setting access supports call audio routing. You can deny or revoke camera/microphone access in Android settings, but video-call features will not work without the relevant permission.</p>
+
+    <h2>6. Security / Bảo mật</h2>
+    <p>The audited implementation uses password hashing, hashed login/IP signals, authenticated session handling, token revocation, parameterized database access, rate limiting for login and deletion attempts, HTTPS requirements for the public deletion flow, and access checks for private chat images. No security measure eliminates every risk, but VideoMate uses measures intended to protect data in transit and at rest within the configured service.</p>
+
+    <h2>7. Retention and deletion / Lưu giữ và xóa dữ liệu</h2>
+    <p>We retain data only for as long as necessary to provide the service, maintain security, prevent fraud, resolve disputes, or meet legal/accounting obligations. No general fixed retention period is stated here because the audited source does not establish one. As noted above, active-call text is designed to expire after one hour.</p>
+    <p>When a User account is deleted, the implementation revokes/removes login and refresh-session information; removes account credentials; anonymizes or clears personal profile fields; deletes the avatar and private chat attachments when safe; replaces the User’s chat text with a neutral deletion marker; removes nonessential blocks, likes, visits, tickets, and related interaction records; and prevents the account from becoming active again. Minimal accounting, Gold/gift/payment, completed-call, security, moderation, fraud-prevention, dispute, or legal records may remain associated with an anonymized/deleted profile where necessary.</p>
+    <p>See <a href="../delete-account/">Delete Account / Xóa tài khoản</a> for the supported in-app method.</p>
+
+    <h2>8. Your choices and inquiries / Lựa chọn và liên hệ</h2>
+    <p>You can review or update supported profile fields in the app, block or report as available, control Android permissions, and delete your account using the in-app route below. To ask a privacy, support, safety, or deletion-information question, submit a <a class="contact" href="https://github.com/huyenlo908-cmd/videomate-legal/issues/new">Privacy / Support inquiry</a>. Do not post passwords, payment information, identity documents, or other sensitive personal data in a public issue.</p>
+
+    <h2>9. Policy updates / Cập nhật chính sách</h2>
+    <p>We may update this policy when the service or legal requirements change. The effective date at the top shows when this version took effect. Material updates will be published on this page.</p>
+  </article></main>
+  <footer>© 2026 SGA VN · <a href="../support/">Privacy / Support inquiry</a></footer>
+</body>
+</html>
