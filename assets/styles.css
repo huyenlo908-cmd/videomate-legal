@@ -47,6 +47,17 @@ ul { padding-left: 1.3rem; }
 .notice { margin: 1.25rem 0; padding: 1rem 1.1rem; border-left: 4px solid var(--brand); background: #fff0f6; }
 .meta { color: var(--muted); }
 .contact { font-weight: 750; }
+.deletion-cta {
+  display: inline-block;
+  margin: .5rem 0 1rem;
+  padding: .8rem 1.1rem;
+  border-radius: .55rem;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+.deletion-cta:hover { background: var(--brand-dark); color: #fff; }
 footer { padding: 0 0 2.5rem; color: var(--muted); font-size: .92rem; }
 @media (max-width: 650px) {
   .bar { align-items: flex-start; flex-direction: column; }
